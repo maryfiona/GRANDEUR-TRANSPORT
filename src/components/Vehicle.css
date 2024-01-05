@@ -1,0 +1,42 @@
+/* Vehicle.css */
+.vehicles {
+    background-color: #fff;
+    padding: 70px 0 155px 0;
+  }
+  
+  .vehicles .titlepage {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  
+  .vehicles .titlepage p {
+    color: #0d0202;
+    padding-top: 15px;
+    text-align: center;
+    margin: 0 50px;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  
+  
+ 
+ 
+  
+  .blac_co {
+    color: #000;
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 34px;
+  }
+  
+ 
+  
+  #veh .carousel-caption {
+    position: inherit;
+    padding: 0;
+  }
+  
+ 
+  

@@ -1,0 +1,31 @@
+.top-nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .top-nav-item {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
+  /* Style.css */
+
+.custom-link {
+    text-decoration: none; /* Remove underline */
+    color:white; /* Set the text color */
+    font-weight: bold; /* Optionally set the font weight */
+    /* Add more styles as needed */
+  }
+  .nav-link{
+    color: white;
+  }
+  
+ 
