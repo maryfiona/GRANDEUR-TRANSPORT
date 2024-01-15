@@ -9,6 +9,7 @@ import Service from '../components/Service'
 import Vehicle from '../components/Vehicle'
 import BookingForm from '../components/BookingForm';
 import Footer from '../components/Footer'
+import Payment from '../components/Payment';
 // import PaymentForm from './PaymentForm';
 // import { Elements } from '@stripe/react-stripe-js';
 // import { loadStripe } from '@stripe/stripe-js';
@@ -47,6 +48,7 @@ function HomePage() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/BookingForm" element={<BookingForm />} />
             </Routes>
+           
             
             <Footer />
           </>

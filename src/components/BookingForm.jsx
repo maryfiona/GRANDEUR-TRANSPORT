@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-
-
+import { Link } from 'react-router-dom';
+import './BookingForm.css'
+// import Payment from './Payment';
 const BookingForm = () => {
   const [bookingData, setBookingData] = useState({
     fullName: '',
@@ -11,6 +12,7 @@ const BookingForm = () => {
     preferredDate: '',
     goodsDescription: '',
   });
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -19,34 +21,18 @@ const BookingForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    // Implement your booking submission logic here
-    // You can send the data to your server or a third-party service for processing
-  
-    console.log('Booking data submitted:', bookingData);
-  
-    // Clear the form data after submission
-    setBookingData({
-      fullName: '',
-      email: '',
-      phone: '',
-      pickupLocation: '',
-      deliveryLocation: '',
-      preferredDate: '',
-      goodsDescription: '',
-    });
-  
-    // Redirect to the payment page
-    window.location.href = 'http://localhost:3001/payment'; // Replace with your actual payment page URL
-  };
+    setShowPopup(true);
+   };
+
+   
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 ">
       <div>
         <h1 className="text-center mb-4">Book a Truck</h1>
       </div>
     
-      <form className="booking-form" action="http://localhost:3001/api/submit-form" method="post" onSubmit={handleSubmit}>
+      <form   onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="fullName" className="form-label">
             Full Name
@@ -150,6 +136,46 @@ const BookingForm = () => {
   </button>
 
       </form>
+      {showPopup && (
+         <div className="popupOverlay">
+         <div className="popup-content">
+           <h2>Booking Information</h2>
+           <p>
+             <strong>Full Name:</strong> {bookingData.fullName}
+           </p>
+           <p>
+             <strong>Email:</strong> {bookingData.email}
+           </p>
+           <p>
+             <strong>Phone:</strong> {bookingData.phone}
+           </p>
+           <p>
+             <strong>Pickup Location:</strong> {bookingData.pickupLocation}
+           </p>
+           <p>
+             <strong>Delivery Location:</strong> {bookingData.deliveryLocation}
+           </p>
+           <p>
+             <strong>Preferred Date:</strong> {bookingData.preferredDate}
+           </p>
+           <p>
+             <strong>Goods Description:</strong> {bookingData.goodsDescription}
+           </p>
+         
+         
+    
+           <Link to=""  className="CloseButton">
+      pay now
+    </Link>
+    <Payment />
+         </div>
+       </div>
+
+     )}
+
+
+
+         
     </div>
   );
 };
