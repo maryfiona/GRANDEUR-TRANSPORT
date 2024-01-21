@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './BookingForm.css'
-// import Payment from './Payment';
+import Payment from '../components/Payment'
+
 const BookingForm = () => {
   const [bookingData, setBookingData] = useState({
     fullName: '',
@@ -13,6 +14,7 @@ const BookingForm = () => {
     goodsDescription: '',
   });
   const [showPopup, setShowPopup] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -163,11 +165,10 @@ const BookingForm = () => {
            </p>
          
          
-    
-           <Link to=""  className="CloseButton">
-      pay now
-    </Link>
-    <Payment />
+           <button className="CloseButton" onClick={() => navigate('/Payment')}>
+            Pay Now
+          </button>
+
          </div>
        </div>
 
