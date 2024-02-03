@@ -23,7 +23,7 @@ function HomePage() {
 
     return () => clearTimeout(timer);
   }, []);
-  // const stripePromise = loadStripe('your-publishable-key');
+ 
 
 
   return (
