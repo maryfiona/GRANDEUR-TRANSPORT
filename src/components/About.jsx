@@ -15,10 +15,7 @@ const About = () => {
             <div className="titlepage">
               <h2>About Us</h2>
               <h4>Grandeur Transport</h4>
-              <p> 
-
-​
-Grandeur transport is the leading executive transport service between the Emirates, specially catering for the daily executive commuters over the world.
+              <p>Grandeur transport is the leading executive transport service between the Emirates, specially catering for the daily executive commuters over the world.
 
  
 

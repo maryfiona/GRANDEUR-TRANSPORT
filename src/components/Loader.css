@@ -1,11 +1,18 @@
-
-
 .loader_bg {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensures the loader is on top of other content */
+  width: 100vw; /* Optional: Make loader background cover full viewport width */
+  height: 100vh; /* Optional: Make loader background cover full viewport height */
+  background: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background */
+  display: flex; /* Center the loader */
+  align-items: center; /* Center the loader */
+  justify-content: center; /* Center the loader */
+}
 
-    
-  }
-  
+.loader img {
+  width: 100px; /* Adjust the size of the loading gif */
+  height: 100px; /* Adjust the size of the loading gif */
+}
