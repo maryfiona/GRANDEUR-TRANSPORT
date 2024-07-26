@@ -1,31 +1,88 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
+
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    margin-left: 0; }
+
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px; 
+  }
+}
+
+
+
+
 .top-nav-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  .top-nav-item {
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon {
-    margin-right: 5px;
-  }
-  /* Style.css */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  flex-wrap: wrap; }
+
+
+.top-nav-item {
+  margin: 5px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+}
 
 .custom-link {
-    text-decoration: none; /* Remove underline */
-    color:white; /* Set the text color */
-    font-weight: bold; /* Optionally set the font weight */
-    /* Add more styles as needed */
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .top-nav-container {
+    flex-direction: column; 
+    align-items: flex-start;
   }
-  .nav-link{
-    color: white;
+
+  .top-nav-item {
+    margin: 5px 0;
   }
-  
- 
+}

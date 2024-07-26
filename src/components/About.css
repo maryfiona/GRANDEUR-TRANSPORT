@@ -1,3 +1,65 @@
 .section-spacing {
-    margin-top: 10em;
+  margin-top: 10em;
+}
+
+.about_right img {
+  width: 100%;
+  height: auto;
+}
+
+.titlepage h2 {
+  font-size: 2em;
+}
+
+.titlepage h4 {
+  font-size: 1.5em;
+}
+
+.titlepage p {
+  font-size: 1em;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .section-spacing {
+    margin-top: 5em;
   }
+
+  .titlepage h2 {
+    font-size: 1.5em;
+  }
+
+  .titlepage h4 {
+    font-size: 1.2em;
+  }
+
+  .titlepage p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 576px) {
+  .d_flex {
+    display: block;
+  }
+
+  .about_right {
+    margin-bottom: 20px;
+  }
+
+  .section-spacing {
+    margin-top: 2em;
+  }
+
+  .titlepage h2 {
+    font-size: 1.2em;
+  }
+
+  .titlepage h4 {
+    font-size: 1em;
+  }
+
+  .titlepage p {
+    font-size: 0.8em;
+  }
+}
