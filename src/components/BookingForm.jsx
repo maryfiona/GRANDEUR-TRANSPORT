@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './BookingForm.css'
-import Payment from '../components/Payment'
+
 
 const BookingForm = () => {
   const [bookingData, setBookingData] = useState({

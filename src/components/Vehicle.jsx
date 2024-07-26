@@ -1,5 +1,5 @@
 // Vehicle.jsx
-import React from 'react';
+
 import './Vehicle.css'; // Import your CSS file
 import Truck1 from '../assets/Truck1.jpg';
 import Truck2 from '../assets/Truck2.jpg';

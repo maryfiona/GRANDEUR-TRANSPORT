@@ -1,6 +1,3 @@
-
-
-import React from 'react';
 import Load from '../assets/loading.gif'
 import './Loader.css'
 

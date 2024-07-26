@@ -1,6 +1,5 @@
-import React from 'react'
-import './Service.css'
 
+import './Service.css'
 import  court from '../assets/court.png'
 
 const Service = () => {
