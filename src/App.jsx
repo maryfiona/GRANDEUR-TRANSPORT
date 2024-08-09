@@ -1,17 +1,4 @@
-// import React from 'react';
-// import './App.css'
-// import HomePage from './pages/HomePage';
 
-// const App = () => {
- 
-//   return (
-//    <div>
-//     <HomePage />
-//    </div>
-//   );
-// };
-
-// export default App;
 import React, { useEffect } from 'react';
 import HomePage from './pages/HomePage';
 
